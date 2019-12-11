@@ -109,7 +109,10 @@ class TicTacToe
       return nil 
     end
   end
+  
   def play
-    
+    while !over do
+          
+    end
   end
 end

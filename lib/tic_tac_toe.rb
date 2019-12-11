@@ -69,6 +69,13 @@ class TicTacToe
     turn = gets 
     val = input_to_index(turn)
     move = valid_move?(val)
+    while !move do
+      puts "Invalid Move"
+      puts "Choice of 1-9:"
+      val = gets
+      val = input_to_index(val)
+      move = valid_move(val)
+    end
     player = current_player
     if move
       move(val, player)

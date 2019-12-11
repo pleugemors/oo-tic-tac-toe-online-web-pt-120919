@@ -102,4 +102,8 @@ class TicTacToe
     (draw? || won?)? true: false 
   end
   
+  def winner
+    won? ? current_player: nil 
+  end
+  
 end

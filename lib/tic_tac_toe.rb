@@ -74,7 +74,7 @@ class TicTacToe
       puts "Choice of 1-9:"
       turn = gets
       val = input_to_index(turn)
-      move = valid_move(val)
+      move = valid_move?(val)
     end
     player = current_player
     if move
